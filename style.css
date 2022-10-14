@@ -7,37 +7,70 @@
 
 html {
     font-size: 62.5%;
+    --greyish-blue: hsl(229, 6%, 66%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --very-light-gray: hsl(0, 0%, 98%);
 }
 
+
+/* BODY STYLES */
 body {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
+    padding: 4rem 2rem;
     height: 100vh;
+    background-color: var(--very-light-gray);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* HEADING STYLES */
-.title {
-    margin-bottom: 3rem;
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    padding:0 6rem 2rem;
+    width:50rem;
+    margin:0 auto;
+    color:  var(--very-dark-blue);
+    font-weight: 600;
+}
+.reliable {
+    display: block;
+    width: 50rem;
+    font-size:3rem;
+    margin: 0 auto;
+    padding: 0 6rem;
+    color: var(--greyish-blue);
+    font-weight:200;
+    
+}
+
+.heading-p {
+    font-size:1.3rem;
+    width: 43rem;
+    margin: 0 auto;
+    text-align: center;
+    color:var(--greyish-blue);
+    font-weight: 400;
+    padding-left::
+    transform: translateX(-10%);
 }
 
 /* COLUMNS STYLES */
 .cols-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
 }
 
 .col {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     flex: 1 1 70;
-    margin: 2rem;
-    padding: 2rem;
+    margin: 1.5rem;
+    /* padding: 2rem; */
 }
 
 /* CARD STYLES */
@@ -47,23 +80,43 @@ body {
     margin:1px;
     padding:2rem;
     border-radius:1rem;
-    position: relative;
-    box-shadow: 1px 5px 10px rgba(0,0,0,0.3);
+    /* position: relative; */
+    box-shadow: 2.5px 10px 10px  hsla(212, 86%, 64%, 0.15);
 }
 
 .card h2 {
     margin-bottom:1rem;
+    font-size:1.6rem;
+    color: var(--very-dark-blue);
 }
 
 .card p {
+    font-size:1.5rem;
     margin-bottom: 3rem;
+    color: var(--greyish-blue);
+
 }
 
-.card img {
-    /* position: absolute; */
+img {
+    position: relative;
     right: 1rem;
+    margin-bottom: 2rem;
+    left: 19rem;
+}
+/* CARD BORDERS STYLES */
+.team-builder {
+    margin-bottom: 3rem;
+    border-top: 3px solid hsl(0, 78%, 62%);
 }
 
-.team-builder {
-    margin-bottom: 2rem;
+.karma {
+    border-top:3px solid hsl(34, 97%, 64%);
+}
+
+.supervisor {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.calculator {
+    border-top: 3px solid  hsl(212, 86%, 64%);
 }
