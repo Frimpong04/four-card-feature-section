@@ -16,7 +16,7 @@ html {
 /* BODY STYLES */
 body {
     padding: 4rem 2rem;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--very-light-gray);
     font-family: 'Poppins', sans-serif;
 }
@@ -44,14 +44,12 @@ h1 {
 }
 
 .heading-p {
-    font-size:1.3rem;
+    font-size:1.4rem;
     width: 43rem;
     margin: 0 auto;
     text-align: center;
     color:var(--greyish-blue);
     font-weight: 400;
-    padding-left::
-    transform: translateX(-10%);
 }
 
 /* COLUMNS STYLES */
@@ -59,7 +57,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .col {
@@ -91,7 +90,7 @@ h1 {
 }
 
 .card p {
-    font-size:1.5rem;
+    font-size:1.3rem;
     margin-bottom: 3rem;
     color: var(--greyish-blue);
 
@@ -120,3 +119,40 @@ img {
 .calculator {
     border-top: 3px solid  hsl(212, 86%, 64%);
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 375px) {
+    /* html {
+        font-size: 50%;
+    } */
+    body {
+        padding: 4rem 2rem;
+    }
+    h1,
+    .reliable {
+        padding:0 0.5rem;
+        width: 80%;
+        font-size:2rem;
+    }
+    .heading-p {
+        width: 90%;
+        margin:0 auto;
+        font-size:1.5;
+        padding:0.5rem;
+        text-align: center;
+    }
+    .cols-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card {
+        width: 100%;
+    }
+
+    img {
+        width: 20%;
+        height: 20%;
+    }
+} 
